@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">DigitalDopamine</a></h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/projects">Projects</a></li>
+      </ul>
+    </nav>
+    <main>{% block content %}{% endblock %}</main>
+    <footer>&copy; 2023 DigitalDopamine</footer>
+  </body>
+</html>
